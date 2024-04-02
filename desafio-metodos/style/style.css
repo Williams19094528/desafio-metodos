@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.columna-izq {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.columna-derecha {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#taskInput {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.task {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+.task-controls {
+  margin-top: 5px;
+}
+
+.task-controls button {
+  margin-right: 5px;
+}
+
+.foto {
+  border-radius: 45px;
+  animation: aparecer 5s forwards;
+  transition: opacity 0.3s ease;
+}
+
+.foto:hover {
+  opacity: 0.7;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 20;
+  }
+}
